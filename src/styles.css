@@ -1,0 +1,78 @@
+.whole-box {
+  border: solid;
+  border-color: rgb(239, 117, 158, 10);
+  border-radius: 25px;
+  margin-top: 10px;
+  font-family: "Noto Sans Tangsa", sans-serif;
+}
+.today-weather-box {
+  padding: 20px;
+  text-align: right;
+}
+.week-forecast {
+  padding: 20px;
+}
+
+.city-search {
+  padding: 20px;
+  text-align: right;
+}
+h1,
+today-date,
+today-time {
+  text-align: right;
+}
+
+.today-icon {
+  color: grey;
+  font-size: 100px;
+  display: block;
+  text-align: left;
+}
+
+.forecast-text {
+  font-size: 20px;
+  text-align: left;
+}
+.weather-icon {
+  color: grey;
+  font-size: 30px;
+}
+
+.day {
+  color: blueviolet;
+}
+.search-button {
+  color: blueviolet;
+  background-color: pink;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 2px 2px;
+  transition: all 200ms ease;
+}
+
+.current-location-button {
+  color: pink;
+  background-color: blueviolet;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 2px 2px grey;
+  transition: all 200ms ease;
+}
+
+.searching-city-message {
+  color: magenta;
+  text-align: right;
+}
+
+.today-temperature {
+  font-size: 30px;
+}
+
+.temperature-superscript {
+  font-size: 16px;
+}
+
+.weather-description {
+  color: rgb(239, 117, 158, 10);
+}
