@@ -3,24 +3,24 @@ let apiKey = "3499ef150985eccadd080ff408a018df";
 let weather = {
   paris: {
     temp: 19.7,
-    humidity: 80
+    humidity: 80,
   },
   tokyo: {
     temp: 17.3,
-    humidity: 50
+    humidity: 50,
   },
   lisbon: {
     temp: 30.2,
-    humidity: 20
+    humidity: 20,
   },
   "san francisco": {
     temp: 20.9,
-    humidity: 100
+    humidity: 100,
   },
   oslo: {
     temp: -5,
-    humidity: 20
-  }
+    humidity: 20,
+  },
 };
 
 function weatherInCity(city) {
@@ -57,9 +57,8 @@ function injectFahrenheitTemp() {
   // grab that number
   let temperatureInCelcius = temperatureDisplay.innerHTML;
   // use our existing function to convert that number
-  let temperatureInFahrenheit = convertCelsiusToFahrenheit(
-    temperatureInCelcius
-  );
+  let temperatureInFahrenheit =
+    convertCelsiusToFahrenheit(temperatureInCelcius);
   console.log(temperatureInFahrenheit);
   // inject the new value into the display
   temperatureDisplay.innerHTML = temperatureInFahrenheit;
@@ -88,8 +87,8 @@ fahrenheitConversionLink.addEventListener("click", injectFahrenheitTemp);
 let celciusConversionLink = document.querySelector("#celcius-link");
 celciusConversionLink.addEventListener("click", injectCelciusTemp);
 
-//let city = prompt("What city are you in?");
-//alert(weatherInCity(city));
+let city = prompt("What city are you in?");
+alert(weatherInCity(city));
 
 let now = new Date();
 let currentTime = now.toTimeString();
@@ -102,7 +101,7 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let currentDayDisplay = days[now.getDay()];
 
@@ -139,9 +138,8 @@ form.addEventListener("submit", displaySearchedCityData);
 
 function updateTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
-  let temperatureInCurrentLocation = document.querySelector(
-    "#today-temperature"
-  );
+  let temperatureInCurrentLocation =
+    document.querySelector("#today-temperature");
   temperatureInCurrentLocation.innerHTML = `${temperature} `;
 }
 

@@ -1,13 +1,21 @@
 .whole-box {
   border: solid;
+  color: rgb(53, 38, 124);
+  background: linear-gradient(rgb(245, 200, 215), rgb(239, 117, 158));
   border-color: rgb(239, 117, 158, 10);
+  border-width: medium;
   border-radius: 25px;
   margin-top: 10px;
   font-family: "Noto Sans Tangsa", sans-serif;
 }
+
+.today-icon {
+  color: grey;
+  font-size: 100px;
+  display: block;
+}
 .today-weather-box {
   padding: 20px;
-  text-align: right;
 }
 .week-forecast {
   padding: 20px;
@@ -21,13 +29,6 @@ h1,
 today-date,
 today-time {
   text-align: right;
-}
-
-.today-icon {
-  color: grey;
-  font-size: 100px;
-  display: block;
-  text-align: left;
 }
 
 .forecast-text {
@@ -74,5 +75,10 @@ today-time {
 }
 
 .weather-description {
-  color: rgb(239, 117, 158, 10);
+  color: rgb(198, 14, 179);
+  text-align: left;
+}
+
+.current-city-date-time {
+  text-align: right;
 }
